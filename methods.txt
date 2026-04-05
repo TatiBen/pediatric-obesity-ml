@@ -1,0 +1,64 @@
+
+METHODS
+
+Data Source:
+Data were obtained from the National Health and Nutrition Examination 
+Survey (NHANES) August 2021-August 2023 cycle, conducted by the Centers 
+for Disease Control and Prevention (CDC). NHANES is a nationally 
+representative cross-sectional survey combining interviews and physical 
+examinations.
+
+Study Population:
+The initial dataset comprised 11,933 participants. After filtering for 
+Hispanic (Mexican American and Other Hispanic) and Non-Hispanic Black 
+children aged 2-19 years, the final analytic sample comprised 1,102 
+participants with complete outcome data.
+
+Variables:
+The following variables were extracted from five NHANES data files:
+- Demographics: age, gender, race/ethnicity, income-to-poverty ratio, 
+  household size
+- Anthropometric: BMI, waist circumference
+- Physical activity: sitting time, vigorous and moderate activity minutes, 
+  days active 60+ minutes, PE class attendance
+- Dietary: fast food consumption, soda consumption, diet quality
+
+Outcome Variable:
+The primary outcome was pediatric BMI category (BMDBMIC) as defined by 
+CDC age and sex specific growth charts:
+1 = Underweight (below 5th percentile)
+2 = Normal weight (5th-84th percentile)
+3 = Overweight (85th-94th percentile)
+4 = Obese (95th percentile or above)
+
+Data Cleaning:
+Missing values for continuous variables were imputed using median 
+imputation. Empty columns were removed. Rows with missing outcome 
+data were excluded. The final dataset contained 19 variables with 
+zero missing values.
+
+Machine Learning Models:
+Two machine learning models were developed and compared:
+
+1. Random Forest Classifier
+   - n_estimators: 100 trees
+   - max_depth: 10
+   - min_samples_split: 5
+   - random_state: 42
+
+   2. XGBoost Classifier  
+   - n_estimators: 100 trees
+   - max_depth: 6
+   - learning_rate: 0.1
+   - random_state: 42
+
+Model Evaluation:
+Data were split into training (80%, n=881) and testing (20%, n=221) 
+sets using stratified random sampling. Model performance was evaluated 
+using accuracy, precision, recall, and F1-score. Feature importance 
+analysis was conducted to identify key predictors of obesity.
+
+Statistical Analysis:
+All analyses were conducted using Python 3.x with scikit-learn and 
+XGBoost libraries. Data are publicly available at:
+https://github.com/TatiBen/pediatric-obesity-ml
