@@ -1,0 +1,39 @@
+
+ABSTRACT
+Title: Machine Learning Prediction of Obesity Risk in Hispanic and 
+Non-Hispanic Black Children Using NHANES 2021-2023 Data
+
+Background:
+Childhood obesity disproportionately affects Hispanic and Non-Hispanic 
+Black children in the United States, yet machine learning approaches 
+specifically targeting these populations remain limited. This study aimed 
+to develop and compare machine learning models for predicting obesity risk 
+in Hispanic and Non-Hispanic Black children using nationally representative 
+data.
+
+Methods:
+Data were obtained from the National Health and Nutrition Examination Survey 
+(NHANES) 2021-2023 cycle. After filtering for Hispanic and Non-Hispanic Black 
+children aged 2-19 years, the final analytic sample comprised 1,102 
+participants with 19 variables including anthropometric, socioeconomic, 
+dietary, and physical activity measures. Missing values were handled using 
+median imputation. Two machine learning models were developed and compared: 
+Random Forest and XGBoost.
+
+Results:
+XGBoost demonstrated superior performance with an overall accuracy of 92.8% 
+compared to Random Forest (88.2%). Obesity classification showed excellent 
+performance with precision of 0.97 and recall of 0.98. Feature importance 
+analysis revealed BMI (41.9%) and waist circumference (21.7%) as strongest 
+predictors, followed by age (14.5%) and income-to-poverty ratio (4.5%). 
+Obesity prevalence was highest among Non-Hispanic Black children (21.3%) 
+compared to Other Hispanic (19.9%) and Mexican American children (17.7%).
+
+Conclusions:
+Machine learning models demonstrate strong potential as screening tools for 
+obesity risk in Hispanic and Non-Hispanic Black children. Socioeconomic 
+factors and physical activity measures were more important predictors than 
+race alone, suggesting targeted interventions addressing poverty and school 
+physical education access may be most effective.
+
+Word count: 248
