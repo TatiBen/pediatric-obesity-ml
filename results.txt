@@ -1,0 +1,49 @@
+
+RESULTS
+
+Study Population:
+A total of 1,102 Hispanic and Non-Hispanic Black children aged 2-19 years 
+were included in the final analysis. The racial/ethnic distribution was as 
+follows: Non-Hispanic Black (n=563, 34.6%), Other Hispanic (n=534, 32.8%), 
+and Mexican American (n=530, 32.6%).
+
+Obesity Prevalence:
+Overall obesity prevalence was 19.7% (n=320). BMI category distribution 
+was as follows:
+- Underweight: 24 children (1.5%)
+- Normal weight: 583 children (35.8%)
+- Overweight: 175 children (10.8%)
+- Obese: 320 children (19.7%)
+
+Obesity prevalence varied by racial/ethnic group:
+- Mexican American: 17.7% (n=94)
+- Other Hispanic: 19.9% (n=106)
+- Non-Hispanic Black: 21.3% (n=120)
+
+Model Performance:
+Two machine learning models were developed and compared.
+XGBoost demonstrated superior performance:
+
+Random Forest:
+- Overall accuracy: 88.2%
+- Obesity precision: 0.93
+- Obesity recall: 0.98
+- Obesity F1-score: 0.96
+
+XGBoost:
+- Overall accuracy: 92.8%
+- Obesity precision: 0.97
+- Obesity recall: 0.98
+- Obesity F1-score: 0.98
+
+Feature Importance:
+The top five predictors of obesity identified by the Random Forest model:
+1. BMI (41.9%)
+2. Waist circumference (21.7%)
+3. Age (14.5%)
+4. Income-to-poverty ratio (4.5%)
+5. PE class attendance (3.2%)
+
+Notably race/ethnicity ranked ninth (1.4%) suggesting that socioeconomic 
+and behavioral factors are stronger predictors of obesity than race alone 
+in this population.
