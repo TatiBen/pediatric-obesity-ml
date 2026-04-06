@@ -1,0 +1,79 @@
+
+COVER LETTER
+
+[Date]
+
+The Editorial Board
+Pediatric Obesity Journal
+Wiley Online Library
+
+Dear Editor,
+We are pleased to submit our original research article entitled 
+"Machine Learning Prediction of Obesity Risk in Hispanic and 
+Non-Hispanic Black Children: A Comparative Analysis Using 
+NHANES 2021-2023 Data" for consideration for publication in 
+Pediatric Obesity.
+
+BACKGROUND AND IMPORTANCE:
+Childhood obesity disproportionately affects Hispanic and 
+Non-Hispanic Black children in the United States, yet machine 
+learning approaches specifically targeting these underserved 
+populations remain limited. Addressing this gap is critical 
+given the well-documented racial and ethnic disparities in 
+pediatric obesity prevalence and the urgent need for targeted 
+prevention strategies in these communities.
+
+WHAT WE DID:
+Using the most recent nationally representative NHANES 
+2021-2023 data, we developed and compared two machine learning 
+models — Random Forest and XGBoost — specifically focused on 
+Hispanic and Non-Hispanic Black children aged 2-19 years. 
+Our final analytic sample comprised 1,102 participants with 
+19 clinical, socioeconomic, dietary, and physical activity 
+variables.
+
+KEY FINDINGS:
+Our XGBoost model achieved an overall accuracy of 92.8% with 
+near-perfect obesity detection (precision=0.97, recall=0.98), 
+representing a meaningful improvement over previously published 
+models. Feature importance analysis revealed that socioeconomic 
+factors and physical activity measures — particularly 
+income-to-poverty ratio and PE class attendance — were stronger 
+predictors of obesity than race alone, with important 
+implications for intervention design in these communities.
+
+WHY THIS JOURNAL:
+We believe this manuscript is ideally suited for Pediatric 
+Obesity as it directly addresses the journal's focus on 
+research into obesity during childhood and adolescence, 
+specifically covering epidemiology, behavior, physical 
+activity, and health disparities. Our findings provide 
+actionable clinical insights for pediatricians and public 
+health practitioners working with Hispanic and Black 
+pediatric populations.
+
+ORIGINALITY:
+This study is original, has not been published previously, 
+and is not under consideration for publication elsewhere. 
+All data and code are publicly available at 
+https://github.com/TatiBen/pediatric-obesity-ml ensuring 
+full transparency and reproducibility.
+
+All authors have read and approved the manuscript. The authors 
+declare no competing interests. This study used publicly 
+available de-identified data and did not require Institutional 
+Review Board approval.
+
+We hope you will find our manuscript suitable for publication 
+in Pediatric Obesity and look forward to your response.
+
+Sincerely,
+
+[Your Full Name], [Your Degree]
+[Your Title]
+[Your Institution/Hospital]
+[Your Address]
+[Your City, State, ZIP]
+[Your Email]
+[Your Phone]
+
