@@ -1,49 +1,80 @@
 
-RESULTS
+ RESULTS
 
 Study Population:
 A total of 1,102 Hispanic and Non-Hispanic Black children aged 2-19 years 
-were included in the final analysis. The racial/ethnic distribution was as 
-follows: Non-Hispanic Black (n=563, 34.6%), Other Hispanic (n=534, 32.8%), 
-and Mexican American (n=530, 32.6%).
+were included in the final analysis. The racial and ethnic distribution 
+was as follows: Non-Hispanic Black (n=563, 34.6%), Other Hispanic 
+(n=534, 32.8%), and Mexican American (n=530, 32.6%). The mean age of 
+participants was 10.4 years. Males comprised 51.2% of the sample. 
+The majority of participants came from low income households with a 
+mean income to poverty ratio of 1.8, reflecting the socioeconomically 
+disadvantaged nature of the study population.
 
-Obesity Prevalence:
-Overall obesity prevalence was 19.7% (n=320). BMI category distribution 
+BMI Category Distribution:
+Overall BMI category distribution among the 1,102 study participants 
 was as follows:
-- Underweight: 24 children (1.5%)
-- Normal weight: 583 children (35.8%)
-- Overweight: 175 children (10.8%)
-- Obese: 320 children (19.7%)
+- Underweight (BMI below 5th percentile): 24 children (1.5%)
+- Normal weight (BMI 5th-84th percentile): 583 children (35.8%)
+- Overweight (BMI 85th-94th percentile): 175 children (10.8%)
+- Obese (BMI at or above 95th percentile): 320 children (19.7%)
 
-Obesity prevalence varied by racial/ethnic group:
-- Mexican American: 17.7% (n=94)
-- Other Hispanic: 19.9% (n=106)
-- Non-Hispanic Black: 21.3% (n=120)
+It is notable that 525 children (32.3%) had missing BMI category data 
+and were excluded from the final analysis following standard 
+epidemiological practice for missing outcome data.
 
-Model Performance:
-Two machine learning models were developed and compared.
-XGBoost demonstrated superior performance:
+Obesity Prevalence by Race and Ethnicity:
+Obesity prevalence varied significantly across racial and ethnic groups. 
+Non-Hispanic Black children demonstrated the highest obesity prevalence 
+at 21.3% (n=120 of 563), followed by Other Hispanic children at 19.9% 
+(n=106 of 534), and Mexican American children at 17.7% (n=94 of 530). 
+This pattern is consistent with previously published national estimates 
+and supports the validity and representativeness of our study sample.
 
-Random Forest:
-- Overall accuracy: 88.2%
-- Obesity precision: 0.93
-- Obesity recall: 0.98
-- Obesity F1-score: 0.96
+Combined overweight and obesity prevalence was highest among 
+Non-Hispanic Black children (34.1%), followed by Other Hispanic 
+children (30.7%) and Mexican American children (28.5%), highlighting 
+the substantial burden of excess weight across all three groups.
 
-XGBoost:
-- Overall accuracy: 92.8%
-- Obesity precision: 0.97
-- Obesity recall: 0.98
-- Obesity F1-score: 0.98
+Machine Learning Model Performance:
+Two machine learning models were developed and evaluated on the 
+held-out test set comprising 221 children (20% of total sample).
 
-Feature Importance:
-The top five predictors of obesity identified by the Random Forest model:
-1. BMI (41.9%)
-2. Waist circumference (21.7%)
-3. Age (14.5%)
-4. Income-to-poverty ratio (4.5%)
-5. PE class attendance (3.2%)
 
-Notably race/ethnicity ranked ninth (1.4%) suggesting that socioeconomic 
-and behavioral factors are stronger predictors of obesity than race alone 
-in this population.
+Random Forest Classifier achieved an overall accuracy of 88.2%. 
+Performance metrics for obesity classification specifically were: 
+precision 0.93, recall 0.98, and F1-score 0.96. Overweight 
+classification showed moderate performance with F1-score of 0.68, 
+likely reflecting the clinical overlap between overweight and obese 
+categories. Underweight classification was limited by the very small 
+sample size in the test set (n=3).
+
+XGBoost Classifier demonstrated superior overall performance with 
+an accuracy of 92.8%, representing a 4.6 percentage point improvement 
+over Random Forest. Obesity classification performance was excellent 
+with precision of 0.97, recall of 0.98, and F1-score of 0.98. 
+Overweight classification also improved substantially with an 
+F1-score of 0.82 compared to 0.68 for Random Forest.
+
+Feature Importance Analysis:
+Feature importance analysis using the Random Forest model identified 
+the following top predictors of obesity classification in our study 
+population. Anthropometric measures dominated the importance rankings, 
+with BMI value accounting for 41.9% of model importance and waist 
+circumference contributing 21.7%, together accounting for 63.6% of 
+total feature importance. Age was the third most important predictor 
+at 14.5%, reflecting the significant changes in obesity risk across 
+different developmental stages of childhood and adolescence.
+
+Among socioeconomic and behavioral factors, income to poverty ratio 
+ranked fourth at 4.5%, confirming the significant role of 
+socioeconomic disadvantage in obesity risk. Physical activity measures 
+ranked fifth and sixth, with PE class attendance contributing 3.2% 
+and daily physical activity levels contributing 2.9% of model 
+importance respectively. Fast food consumption ranked eighth at 1.5% 
+and soda consumption ranked fifteenth at 0.6%.
+
+Notably race and ethnicity ranked ninth at 1.4% of feature importance, 
+suggesting that after controlling for anthropometric, socioeconomic and 
+behavioral factors, race itself contributes relatively little additional 
+predictive value for obesity classification in this population.

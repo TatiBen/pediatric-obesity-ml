@@ -1,0 +1,57 @@
+
+INTRODUCTION
+
+Childhood obesity represents one of the most significant public health 
+challenges of the 21st century. According to the World Health Organization, 
+over 390 million children and adolescents aged 5-19 years were classified 
+as overweight or obese in 2022, with prevalence having quadrupled among 
+adolescents since 1990. In the United States, approximately 19.7% of 
+children aged 2-19 years have obesity, representing more than 14.7 million 
+children and adolescents.
+
+Racial and ethnic disparities in childhood obesity are well documented. 
+Hispanic and Non-Hispanic Black children bear a disproportionate burden 
+of obesity compared to their Non-Hispanic White counterparts. Data from 
+the National Health and Nutrition Examination Survey (NHANES) consistently 
+demonstrate higher obesity prevalence among Hispanic and Non-Hispanic Black 
+children, driven by complex interactions between socioeconomic factors, 
+dietary patterns, physical activity levels, and structural determinants 
+of health including poverty and limited access to recreational facilities 
+and quality food.
+
+Early identification of children at risk for obesity is critical for 
+timely intervention. Traditional screening approaches rely primarily on 
+body mass index (BMI) percentile assessment at routine pediatric visits. 
+However, these approaches do not leverage the full spectrum of clinical, 
+behavioral, and socioeconomic data routinely collected during pediatric 
+encounters. Machine learning (ML) algorithms offer the potential to 
+integrate multiple data streams to generate more accurate and 
+comprehensive obesity risk predictions.
+
+Several ML approaches have been applied to childhood obesity prediction, 
+including logistic regression, decision trees, Random Forest, and gradient 
+boosting algorithms. These studies have reported accuracy ranges of 76-89% 
+using various datasets including electronic health records and national 
+survey data. However, studies specifically targeting Hispanic and 
+Non-Hispanic Black pediatric populations using the most recent nationally 
+representative data remain limited.
+
+The National Health and Nutrition Examination Survey (NHANES) provides 
+a unique opportunity to address this gap. NHANES collects nationally 
+representative data on demographics, anthropometrics, dietary habits, 
+physical activity, and socioeconomic factors across diverse populations, 
+making it an ideal data source for developing population-specific 
+obesity prediction models.
+
+The primary objectives of this study were to:
+1. Develop and compare machine learning models for predicting obesity 
+   risk in Hispanic and Non-Hispanic Black children aged 2-19 years
+2. Identify the most important predictors of obesity in these populations
+3. Evaluate the potential clinical utility of machine learning as a 
+   screening tool for pediatric obesity in underserved communities
+
+By focusing specifically on Hispanic and Non-Hispanic Black children 
+using the most recent NHANES 2021-2023 data, this study addresses an 
+important gap in the literature and provides actionable insights for 
+pediatric clinicians and public health practitioners working with 
+these underserved populations.

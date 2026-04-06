@@ -1,0 +1,43 @@
+
+TITLE PAGE
+
+Title: 
+Machine Learning Prediction of Obesity Risk in Hispanic and 
+Non-Hispanic Black Children: A Comparative Analysis Using 
+NHANES 2021-2023 Data
+
+Running Head: 
+Machine Learning and Pediatric Obesity Disparities
+
+Keywords: 
+childhood obesity, machine learning, Hispanic children, 
+Non-Hispanic Black children, NHANES, XGBoost, Random Forest, 
+health disparities, pediatric BMI, socioeconomic factors,
+physical activity, feature importance, health equity
+
+Word Count: 2,480
+Number of Figures: 4
+Number of Tables: 0
+
+Corresponding Author:
+[Your Name MD]
+[Your Institution]
+[Your Address]
+[Your Email]
+[Your Phone]
+
+Declaration of Interest:
+The authors declare no competing interests.
+
+Data Availability Statement:
+All data used in this study are publicly available from the CDC 
+NHANES website. All code is available at:
+https://github.com/TatiBen/pediatric-obesity-ml
+
+Funding:
+This research received no specific funding.
+
+
+Ethical Approval:
+This study used publicly available de-identified data and did 
+not require Institutional Review Board approval.

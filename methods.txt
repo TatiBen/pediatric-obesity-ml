@@ -1,64 +1,77 @@
 
 METHODS
 
-Data Source:
-Data were obtained from the National Health and Nutrition Examination 
-Survey (NHANES) August 2021-August 2023 cycle, conducted by the Centers 
-for Disease Control and Prevention (CDC). NHANES is a nationally 
-representative cross-sectional survey combining interviews and physical 
-examinations.
+Study Design and Data Source:
+This study utilized a cross-sectional design using publicly available 
+data from the National Health and Nutrition Examination Survey (NHANES) 
+August 2021-August 2023 cycle, conducted by the National Center for 
+Health Statistics (NCHS) of the Centers for Disease Control and 
+Prevention (CDC). NHANES is a nationally representative cross-sectional 
+survey that combines standardized household interviews with physical 
+examinations conducted in mobile examination centers. The survey employs 
+a complex multistage probability sampling design to produce nationally 
+representative estimates of the civilian non-institutionalized United 
+States population. All NHANES data are publicly available and 
+de-identified, therefore this study did not require Institutional 
+Review Board approval.
 
 Study Population:
-The initial dataset comprised 11,933 participants. After filtering for 
-Hispanic (Mexican American and Other Hispanic) and Non-Hispanic Black 
-children aged 2-19 years, the final analytic sample comprised 1,102 
-participants with complete outcome data.
+The initial dataset comprised 11,933 participants across all age groups 
+and racial and ethnic backgrounds. Inclusion criteria for this study 
+were: (1) age 2-19 years, (2) self-identified Hispanic ethnicity 
+including Mexican American and Other Hispanic, or Non-Hispanic Black 
+race, and (3) available outcome data for pediatric BMI classification. 
+After applying these criteria and removing records with missing outcome 
+data, the final analytic sample comprised 1,102 participants.
 
-Variables:
-The following variables were extracted from five NHANES data files:
-- Demographics: age, gender, race/ethnicity, income-to-poverty ratio, 
-  household size
-- Anthropometric: BMI, waist circumference
-- Physical activity: sitting time, vigorous and moderate activity minutes, 
-  days active 60+ minutes, PE class attendance
-- Dietary: fast food consumption, soda consumption, diet quality
+Variables and Measures:
+Data were extracted from five NHANES public use files and merged using 
+the unique participant identifier SEQN. The following variables were 
+selected based on clinical relevance and published literature on 
+childhood obesity risk factors:
+
+Demographic variables included age in years, sex, race and ethnicity, 
+household income to poverty ratio, and household size. Anthropometric 
+variables included body mass index and waist circumference, both 
+measured by trained NHANES examination staff using standardized 
+protocols. Physical activity variables included minutes of sedentary 
+behavior, vigorous and moderate physical activity frequency and 
+duration, days per week with at least 60 minutes of physical activity, 
+and days per week attending school physical education class. Dietary 
+variables included frequency of fast food consumption, soda 
+consumption, and self-reported diet quality.
 
 Outcome Variable:
-The primary outcome was pediatric BMI category (BMDBMIC) as defined by 
-CDC age and sex specific growth charts:
-1 = Underweight (below 5th percentile)
-2 = Normal weight (5th-84th percentile)
-3 = Overweight (85th-94th percentile)
-4 = Obese (95th percentile or above)
+The primary outcome was pediatric BMI category as defined by the CDC 
+age and sex specific growth charts variable BMDBMIC:
+- Category 1: Underweight (below 5th percentile)
+- Category 2: Normal weight (5th to 84th percentile)  
+- Category 3: Overweight (85th to 94th percentile)
+- Category 4: Obese (at or above 95th percentile)
 
-Data Cleaning:
+
+Data Preprocessing:
 Missing values for continuous variables were imputed using median 
-imputation. Empty columns were removed. Rows with missing outcome 
-data were excluded. The final dataset contained 19 variables with 
-zero missing values.
+imputation calculated from available observations. Categorical variables 
+with missing values were imputed using the mode. Two variables with 
+greater than 80% missing data were removed entirely from the analysis. 
+Rows with missing outcome data were excluded from the analysis. 
+The final dataset contained 19 variables with zero missing values.
 
 Machine Learning Models:
-Two machine learning models were developed and compared:
+All analyses were conducted in Python using scikit-learn and XGBoost 
+libraries. Data were split into training (80%, n=881) and testing 
+(20%, n=221) sets using random sampling with random state 42 to ensure 
+reproducibility. Two machine learning models were developed:
 
-1. Random Forest Classifier
-   - n_estimators: 100 trees
-   - max_depth: 10
-   - min_samples_split: 5
-   - random_state: 42
 
-   2. XGBoost Classifier  
-   - n_estimators: 100 trees
-   - max_depth: 6
-   - learning_rate: 0.1
-   - random_state: 42
+Random Forest Classifier was configured with 100 estimators, maximum 
+depth of 10, and minimum samples split of 5. XGBoost Classifier was 
+configured with 100 estimators, maximum depth of 6, and learning rate 
+of 0.1. Model performance was evaluated using overall accuracy, 
+precision, recall, and F1-score for each BMI category. Feature 
+importance analysis was conducted using the Random Forest model to 
+identify the most important predictors of obesity classification.
 
-Model Evaluation:
-Data were split into training (80%, n=881) and testing (20%, n=221) 
-sets using stratified random sampling. Model performance was evaluated 
-using accuracy, precision, recall, and F1-score. Feature importance 
-analysis was conducted to identify key predictors of obesity.
-
-Statistical Analysis:
-All analyses were conducted using Python 3.x with scikit-learn and 
-XGBoost libraries. Data are publicly available at:
+All code and data are publicly available at:
 https://github.com/TatiBen/pediatric-obesity-ml
