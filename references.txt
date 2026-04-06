@@ -1,0 +1,67 @@
+
+REFERENCES
+
+1. World Health Organization. Obesity and overweight fact sheet. 
+   Geneva: WHO; 2024. Available from: https://www.who.int
+
+2. CDC. Childhood obesity facts. Centers for Disease Control and 
+   Prevention; 2024. Available from: 
+   https://www.cdc.gov/obesity/childhood-obesity-facts
+
+3. Ogden CL, Fryar CD, Martin CB, et al. Trends in obesity 
+   prevalence by race and Hispanic origin — 1999-2000 to 2017-2018. 
+   JAMA. 2020;324(12):1208-1210. doi:10.1001/jama.2020.14590
+
+4. Ogden CL, Emmerich SD, Stierman B, et al. Obesity among children 
+   and adolescents in NHANES August 2021-August 2023: An examination 
+   of race/Hispanic origin subgroup estimates. Pediatr Obes. 
+   2025;20(10):e70041. doi:10.1111/ijpo.70041
+
+5. Hu K, Staiano AE. Trends in obesity prevalence among children 
+   and adolescents aged 2 to 19 years in the US from 2011 to 2020. 
+   JAMA Pediatr. 2022;176(10):1037-1039. 
+   doi:10.1001/jamapediatrics.2022.2052
+
+6. Deng Y, Yli-Piipari S, El-Shahawy O, Tamura K. Trends and key 
+   disparities of obesity among US adolescents: The NHANES from 
+   2007 to 2020. PLoS ONE. 2024;19(10):e0290211. 
+   doi:10.1371/journal.pone.0290211
+
+7. CDC National Center for Health Statistics. National Health and 
+   Nutrition Examination Survey 2021-2023. Centers for Disease 
+   Control and Prevention; 2024. Available from: 
+   https://wwwn.cdc.gov/nchs/nhanes
+
+8. Colmenarejo G. Machine learning models to predict childhood and 
+   adolescent obesity: A review. Nutrients. 2020;12(8):2466. 
+   doi:10.3390/nu12082466
+
+9. Pang X, Forrest CB, Le-Scherban F, Masino AJ. Prediction of 
+   early childhood obesity with machine learning and electronic 
+   health record data. Int J Med Inform. 2021;150:104454. 
+   doi:10.1016/j.ijmedinf.2021.104454
+
+10. Breiman L. Random forests. Machine Learning. 
+    2001;45(1):5-32. doi:10.1023/A:1010933404324
+
+11. Chen T, Guestrin C. XGBoost: A scalable tree boosting system. 
+    Proceedings of the 22nd ACM SIGKDD International Conference on 
+    Knowledge Discovery and Data Mining; 2016:785-794. 
+    doi:10.1145/2939672.2939785
+
+12. Kuczmarski RJ, Ogden CL, Guo SS, et al. 2000 CDC growth charts 
+    for the United States: methods and development. 
+    Vital Health Stat. 2002;11(246):1-190.  
+
+13. Terry AL, Chiappa MM, McAllister J, Woodwell DA, Graber JE. 
+    Plan and operations of the National Health and Nutrition 
+    Examination Survey August 2021-August 2023. 
+    Vital Health Stat. 2024;1:1-21.
+
+14. Lim H, Lee H, Kim J. A prediction model for childhood obesity 
+    risk using the machine learning method: a panel study on Korean 
+    children. Sci Rep. 2023;13:10122. 
+    doi:10.1038/s41598-023-37171-4
+
+15. Scikit-learn: Machine learning in Python. Pedregosa F, et al. 
+    Journal of Machine Learning Research. 2011;12:2825-2830.
