@@ -1,0 +1,33 @@
+
+REPORTING GUIDELINE COMPLIANCE
+
+This study was reported in accordance with the TRIPOD+AI statement 
+(Transparent Reporting of a multivariable prediction model for 
+Individual Prognosis Or Diagnosis — Artificial Intelligence), 
+published in BMJ 2024. The TRIPOD+AI checklist was completed and 
+is available as supplementary material.
+
+Key TRIPOD+AI items addressed in this study:
+1. TITLE: Clearly identifies study as machine learning prediction model
+2. ABSTRACT: Structured abstract with background, methods, results, 
+   conclusions
+3. INTRODUCTION: Objectives and clinical context clearly stated
+4. DATA SOURCE: NHANES 2021-2023 publicly available dataset
+5. PARTICIPANTS: Inclusion/exclusion criteria clearly defined
+6. OUTCOME: Primary outcome (BMDBMIC) clearly defined with CDC criteria
+7. PREDICTORS: All 17 predictor variables listed and described
+8. SAMPLE SIZE: Training (n=881) and test (n=221) sets reported
+9. MISSING DATA: Median imputation for continuous variables, 
+   mode imputation for categorical variables
+10. STATISTICAL METHODS: Random Forest and XGBoost algorithms 
+    with all hyperparameters reported
+11. MODEL PERFORMANCE: Accuracy, precision, recall, F1-score 
+    reported for all BMI categories
+12. FEATURE IMPORTANCE: Variable importance analysis conducted 
+    and reported
+13. LIMITATIONS: Clearly discussed including cross-sectional design,
+    small underweight sample, recall bias
+14. REPRODUCIBILITY: All code publicly available at 
+    https://github.com/TatiBen/pediatric-obesity-ml
+15. CONFLICTS OF INTEREST: None declared
+16. DATA AVAILABILITY: NHANES data freely available from CDC
